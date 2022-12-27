@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Met</title>
+</head>
+<body>
+<h3>The Metropolitan Museum of Art: Egyptian Art</h3>
+{% for art in display %}
+<p>
+    <a href="{{ art['obj_url'] }}">{{ art['title'] }}</a>
+</p>
+<p>
+    <img src="{{ art['img_url'] }}" width="500"/>
+</p>
+{% endfor %}
+</body>
+</html>
